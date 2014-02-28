@@ -1,0 +1,22 @@
+// Place all the styles related to the Say controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+	margin: 0 auto;
+	width: 960px;
+	background-color: #006E93;
+}
+.timeLabel {
+	font-size: 355pt;
+	background-color: #000;
+	color: #3A873A;
+	display:inline-block;
+	float:left;
+	height: 900px;
+	.hour {
+		padding-left: 100px;
+	}
+	.min {
+		padding-left: 50px;
+	}	
+}

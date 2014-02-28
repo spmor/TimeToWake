@@ -1,0 +1,22 @@
+<head>
+<script type="text/JavaScript">
+	function timedRefresh(timeoutPeriod){
+		setTimeout("location.reload(true);", timeoutPeriod);
+		$('#totalRefresh').html(totalRefresh);
+	}
+</script>
+</head>
+<body onload="JavaScript:timedRefresh(30000);">
+<h1>Who Needs Sleep?</h1>
+<p>
+	<div class="timeLabel hour">
+		<%= @hourDifference %>
+	</div>  
+	<div class="timeLabel min">
+		<%= @minDifference %>
+	</div> 
+	<div id="totalRefresh">
+		<%= @count %>
+	</div>
+</p>
+</body>
